@@ -58,8 +58,11 @@ function get_hotel_detail($id, $db){
             
             <div class="row">
                 <div class="col-md-10">
-                    <h2><span class="label label-primary"><?php echo $hotel->Title?></span></h2>
-                    <p><strong>Abstract:</strong> <?php echo $hotel->Abstract?></p>
+                    <h2><span class="label label-primary"><?php echo $hotel->Title. ' - GS Rank ' .$hotel->GSRank?></span></h2>
+                    <p><strong>Authors: </strong> <?php echo $hotel->Authors?></p>
+                    <p><strong>Abstract: </strong> <?php echo $hotel->Abstract?></p>
+                    <p><strong>Publisher and Year :</strong> <?php echo $hotel->Publisher. ' - ' . $hotel->Year?></p>
+                    <p><strong>Link Jurnal Lengkap: </strong> <a href="<?php echo $hotel->ArticleURL; ?>"><?php echo $hotel->ArticleURL; ?></a></p>
                 </div>
             </div>
             <div class="row">
