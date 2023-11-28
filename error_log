@@ -1,0 +1,18 @@
+[05-Oct-2023 17:00:06 Asia/Jakarta] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.4.33. in /home/senc1419/public_html/reksis/vendor/composer/platform_check.php on line 24
+[05-Oct-2023 17:01:24 Asia/Jakarta] PHP Fatal error:  Uncaught PDOException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/senc1419/public_html/reksis/vendor/nette/database/src/Database/Connection.php:80
+Stack trace:
+#0 /home/senc1419/public_html/reksis/vendor/nette/database/src/Database/Connection.php(80): PDO->__construct()
+#1 /home/senc1419/public_html/reksis/vendor/nette/database/src/Database/Connection.php(68): Nette\Database\Connection->connect()
+#2 /home/senc1419/public_html/reksis/detail.php(7): Nette\Database\Connection->__construct()
+#3 {main}
+
+Next Nette\Database\ConnectionException: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /home/senc1419/public_html/reksis/vendor/nette/database/src/Database/Connection.php:80
+Stack trace:
+#0 /home/senc1419/public_html/reksis/vendor/nette/database/src/Database/Connection.php(83): Nette\Database\DriverException::from()
+#1 /home/senc1419/public_html/reksis/vendor/nette/database/src/Database/Connection.php(68): Nette\Database\Connection->connect()
+#2 /home/senc1419/public_html/reksis/detail.php(7): Nette\Database\Connection->__construct()
+#3 {main}
+  thrown in /home/senc1419/public_html/reksis/vendor/nette/database/src/Database/Connection.php on line 80
+[12-Oct-2023 11:21:21 Asia/Jakarta] PHP Warning:  Undefined array key "kalimat" in /home/senc1419/public_html/reksis/stem_ind.php on line 17
+[12-Oct-2023 11:21:22 Asia/Jakarta] PHP Warning:  Undefined array key "kalimat" in /home/senc1419/public_html/reksis/stem_ind.php on line 17
+[12-Oct-2023 11:25:54 Asia/Jakarta] PHP Warning:  Undefined array key "kalimat" in /home/senc1419/public_html/reksis/stem_ind.php on line 17
